@@ -1,0 +1,145 @@
+:root{
+    --color-uno:#f9db16;
+    --color-dos:#13110e;
+    --color-tres: #ececda;
+}
+
+.nosotros{
+    height: 900px;
+    position: absolute;
+    top: 80px;
+}
+
+.nosotros__titulo{
+    color: var(--color-tres);
+    font-size: 1.9em;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.nosotros h1 span {
+    color: var(--color-uno);
+}
+
+.nosotros__contenedor{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+    height: 844px;
+
+}
+
+.nosotros__contenedor img {
+    width: 80%;
+    height: 200px;
+    align-self: center;
+    border-radius: 10px;
+}
+
+.nosotros__contenedor p {
+    color: var(--color-tres);
+    margin: 25px;
+    text-align: justify;
+}
+
+.nosotros__redes__sociales{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+}
+
+.nosotros__redes__sociales a img{
+    width: 50px;
+    height: 50px;
+    border-radius: 0;
+   
+    
+}
+
+.nosotros__redes__sociales a img:hover {
+    opacity: 0.5;
+}
+
+.nosotros__redes__sociales .imagen{
+    filter: invert(100%) 
+    sepia(84%) saturate(5842%) 
+    hue-rotate(340deg) brightness(100%) 
+    contrast(96%);
+}
+
+a {
+    align-self: center;
+}
+
+a .presupuesto{
+    color: var(--color-dos);
+    border-color:var(--color-dos);
+    width: 200px;
+    height: 40px;
+    background-color: var(--color-uno);
+    border-radius: 20px;
+    transition: all 0.5s ease;
+}
+
+a .presupuesto:hover{
+    background-color: #c5ac0b;
+    width: 250px;
+    box-shadow: 0 0 20px 1px #000;
+}
+
+
+
+@media screen  and (min-width:830px){
+    .nosotros{
+        top: 190px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        text-align: center;
+        height: 100vh;
+    }
+
+    .nosotros__titulo{
+        font-size: 3.5em;
+    }
+
+    .nosotros__contenedor{
+        max-width: 900px;
+    }
+
+    .nosotros__contenedor p {
+        font-size: 1.3em;
+    }
+
+    a .presupuesto{
+        color: var(--color-dos);
+        border-color:var(--color-dos);
+        width: 300px;
+        height: 50px;
+        background-color: var(--color-uno);
+        border-radius: 20px;
+        margin-top: 40px;
+        transition: all 0.5s ease;
+    }
+
+    a .presupuesto:hover{
+        background-color: #c5ac0b;
+        width: 350px;
+        box-shadow: 0 0 20px 1px #000;
+    }
+
+    .nosotros__contenedor img {
+        width: 700px;
+        height: 300px;
+        border-radius: 20px
+    }
+
+
+
+
+}

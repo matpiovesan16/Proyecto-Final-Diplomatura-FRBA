@@ -1,0 +1,144 @@
+:root{
+    --color-uno:#f9db16;
+    --color-dos:#13110e;
+    --color-tres: #ececda;
+}
+
+.testimonios__titulo{
+    color: var(--color-tres);
+    text-align: center;
+    font-size: 1.7em;
+    font-weight: 900;
+}
+
+
+.testimonios__contenedor__completo{
+    display: flex;
+    width: 100%;
+    height: 800px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    position: absolute;
+}
+
+.testimonios{
+    width: 100%;
+    position: absolute;
+    top: 100px;
+    height: 800px;
+}
+
+
+.testimonios__contenedor{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    height: 340px;
+
+}
+
+.order1{
+    order: 1;
+}
+
+.order2{
+    order: 2;
+    display: none;
+ }
+
+
+ .order3{
+    order: 3;
+    display: none;
+ }
+
+
+.testimonios__fotos__nombre{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    /* margin: 0 50px; */
+    border-bottom: 1px solid var(--color-uno);
+
+}
+
+.testimonios__fotos__nombre h3{
+    color: var(--color-tres);
+
+}
+
+.testimonios__fotos__nombre img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    align-self: center;
+}
+
+.testimonio__texto {
+    margin: 0 50px;
+    text-align: justify;
+    border-bottom: 1px solid var(--color-uno);
+
+}
+
+.testimonio__texto p{
+    color: var(--color-tres);
+}
+
+.testimonios__botones{
+    color: var(--color-tres);
+    display: flex;
+    justify-content: space-between;
+    font-weight: 900;
+    width: 100%;
+    font-size: 2.5em;
+    position: absolute;
+    bottom: 550px;
+    z-index: 2;
+}
+
+.testimonios__botones .boton_izquierda{
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    color: var(--color-uno);
+    text-align: center;
+}
+
+.testimonios__botones .boton_derecha{
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    color: var(--color-uno);
+    text-align: center;
+}
+
+
+@media screen and (min-width: 830px){
+    .testimonios__titulo{
+        position: relative;
+        top: 5%;
+    }
+
+    .testimonios__contenedor{
+        margin: 3% 25%;
+
+    }
+
+    .testimonios__botones{
+        padding: 0 20%;
+
+    }
+
+    .testimonios__fotos__nombre img{
+        height: 200px;
+        width: 200px;
+        border-radius: 35%;
+    }
+    .testimonio__texto p{
+        font-size: 1.7vw;
+    }
+ 
+
+}

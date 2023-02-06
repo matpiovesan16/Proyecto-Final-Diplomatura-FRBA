@@ -1,0 +1,55 @@
+:root{
+    --color-uno:#f9db16;
+    --color-dos:#13110e;
+    --color-tres: #ececda;
+}
+.donde__estamos{
+    position: absolute;
+    top: 130px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 844px;
+}
+
+.donde__estamos h1 {
+    color: var(--color-tres);
+    font-size: 2.5em;
+    font-weight: 100;
+    position: relative;
+    top: -30px;
+}
+
+.donde__estamos iframe {
+    width: 90%;
+    height: 350px;
+}
+
+.donde__estamos__informacion{
+    font-size: 1.3em;
+    margin-left: 19px;
+    color: var(--color-tres);
+    align-self: flex-start;
+    height: 300px;
+}
+
+
+.footer_container__tres div a i{
+    color: var(--color-dos);
+    text-decoration: none;
+
+}
+
+
+@media screen and (min-width: 830px){
+    .donde__estamos iframe {
+        width: 80%;
+        height: 350px;
+    }
+
+
+
+}
+

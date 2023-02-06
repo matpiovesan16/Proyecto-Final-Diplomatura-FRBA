@@ -1,0 +1,164 @@
+:root{
+    --color-uno:#f9db16;
+    --color-dos:#13110e;
+    --color-tres: #ececda;
+}
+
+*{
+    box-sizing: border-box;
+    font-family: 'Benne', serif;
+}
+
+
+
+header{
+background-image: linear-gradient(
+    0deg,
+    rgba(0,0,0,0.5),
+    rgba(0,0,0,0.5)) 
+       ,url(../../../assets/img/hero/B&N-1-7.jpg);
+       background-size: cover;
+       background-repeat: no-repeat;
+       background-position: center center;
+       height: 100vh;
+}
+
+.hero{
+    font-family: 'Benne', serif;
+    font-size: 1.5rem;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height:100vh;
+}
+.hero h1,h3 {
+    text-align: center;
+}
+
+.hero span{
+    color: #f9db16;
+}
+
+.hero h1 {
+    position: relative;
+    top: 10px;
+}
+
+.hero h3 {
+    font-size: 1em;
+}
+.hero a {
+    align-self: center;
+    margin-top: 40px;
+}
+
+.hero a .presupuesto{
+    background-color: var(--color-uno);
+    color: var(--color-dos);
+    border: 2px solid var(--color-dos);
+    border-radius: 10px;
+    width: 240px;
+    height: 50px;
+    font-weight: 700;
+    box-shadow:  0 0 20px 1px #000;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+
+.hero a button:hover{
+    color: var(--color-dos);
+    border-color:var(--color-dos);
+    background-color: #c5ac0b;
+   transform: scale(1.1);
+   
+}
+
+.fraseHeader{
+    text-align: center;
+    background-color: var(--color-dos);
+    height: 844px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    padding: 2px;
+}
+
+h2{
+    color: white;
+    font-size: 1.4em;
+}
+
+ .fraseHeader h6{
+    color: gray;
+    font-size: 1.3em;
+}
+
+
+@media screen  and (min-width:830px){
+
+    header{
+        height: 100vh;
+    }
+    .hero{
+        font-family: 'Benne', serif;
+        font-size: 2vw;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content:center;
+        height: 100%;
+    }
+
+    .hero a .presupuesto{
+        background-color: var(--color-uno);
+        color: var(--color-dos);
+        border: 2px solid var(--color-dos);
+        border-radius: 10px;
+        width: 20vw;
+        font-weight: 900;
+        font-size: 1.2em;
+        height: 8vh;
+        font-weight: 700;
+        box-shadow:  0 0 20px 1px #000;
+        cursor: pointer;
+        transition: all 0.3s ease;
+    }
+
+
+    .hero a button:hover{
+        color: var(--color-dos);
+        border-color:var(--color-dos);
+        background-color: #c5ac0b;
+        width: 22vw;
+       
+    }
+
+    .frase{
+        text-align: center;
+        background-color: var(--color-dos);
+        height: 844px;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        font-size: 2vw;
+        flex-direction: column;
+        padding: 2px;
+    }
+
+    h2{
+        color: var(--color-tres);
+        font-size: 3em;
+    }
+    
+     .fraseHeader h6{
+        color: gray;
+        font-size: 1.3em;
+    }
+    
+}
