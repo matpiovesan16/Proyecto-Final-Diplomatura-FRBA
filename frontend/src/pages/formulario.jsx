@@ -54,12 +54,12 @@ const  hanleSubmit = async e =>{
           Nombre
         </label>
 
-        <input type="email" className="formulario__input 2"  name='email' onChange={hanleChange} value={formData.email}  />
+        <input type="email" className="formulario__input 2"  name='email' onChange={hanleChange} value={formData.email}  required/>
         <label for="" className={classNames(`formulario__label fijar`)}>
           Email
         </label>
 
-        <input type="number" className="formulario__input 2"  name='telefono' onChange={hanleChange} value={formData.telefono}  />
+        <input type="number" className="formulario__input 2"  name='telefono' onChange={hanleChange} value={formData.telefono} required />
         <label for="" className={classNames(`formulario__label fijar`)}>
           Telefono
         </label>
